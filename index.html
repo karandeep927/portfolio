@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a class="logo" href="#home">karan</a>
+            <div class="nav-link">
+                <a href="#home" id="act">Home</a>
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+            <span class="menu_icon">=</span>
+        </nav>
+    </header>
+    <main>
+        <section class="h-part" id="home">
+            <div class="h-content">
+                <h3>hey, i'm</h3>
+                <h1>karandeep singh</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet explicabo optio dolores
+                    nesciunt delectus nulla repudiandae enim eum ipsam, recusandae eius reiciendis aliquid soluta!</p>
+                <div class="btn-cont">
+                    <a href="" class="btn">resume</a>
+                    <a href="" class="btn">Portfolio</a>
+                </div>
+            </div>
+            <div class="circle"></div>
+        </section>
+        <section class="a-part" id="about">
+            <div class="circle c2"></div>
+            <div class="a-content">
+                <h1>About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam deserunt porro saepe iure
+                    aspernatur reiciendis doloribus, perspiciatis tempore recusandae, aut facilis praesentium nobis eum
+                    fugiat temporibus architecto exercitationem natus?</p>
+            </div>
+        </section>
+        <section class="s-part" id="skills">
+            <h1 class="s-heading">Skills</h1>
+            <div class="s-container">
+                <div class="boxs1">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In commodi consectetur vero nemo
+                        inventore sint voluptatibus qui id omnis? Ducimus amet enim ad odio possimus.</p>
+                </div>
+                <div class="boxs2">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In commodi consectetur vero nemo
+                        inventore sint voluptatibus qui id omnis? Ducimus amet enim ad odio possimus.</p>
+                </div>
+                <div class="boxs3">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In commodi consectetur vero nemo
+                        inventore sint voluptatibus qui id omnis? Ducimus amet enim ad odio possimus.</p>
+                </div>
+                <div class="boxs4">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In commodi consectetur vero nemo
+                        inventore sint voluptatibus qui id omnis? Ducimus amet enim ad odio possimus.</p>
+                </div>
+            </div>
+        </section>
+        <section class="c-part" id="portfolio">
+            <h1>My project's</h1>
+            <div class="p-content">
+                <div class="p-box1"></div>
+                <div class="p-box2"></div>
+                <div class="p-box3"></div>
+                <div class="p-box4"></div>
+                <div class="p-box5"></div>
+                <div class="p-box6"></div>
+                <div class="p-box7"></div>
+                <div class="p-box8"></div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        let show = document.querySelector(".menu_icon");
+        show.addEventListener("click", show_nav);
+        let flag = true;
+        function show_nav() {
+            if (flag) {
+                document.querySelector(".nav-link").style.display = "flex";
+                flag = false;
+            }
+            else {
+                document.querySelector(".nav-link").style.display = "none";
+                flag = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
